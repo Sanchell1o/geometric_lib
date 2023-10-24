@@ -1,3 +1,6 @@
+import unittest
+
+
 def area(a, h):
     '''
         Возвращает площадь треугольника с основанием a и высотой h.
@@ -9,7 +12,8 @@ def area(a, h):
             Возвращаемое значение:
                  a * h/2(int): площадь  треугольника
         '''
-    return a * h / 2 
+    return a * h / 2
+
 
 def perimeter(a, b, c):
     '''
@@ -24,3 +28,23 @@ def perimeter(a, b, c):
                 a + b + с: периметр треугольника
     '''
     return a + b + c
+
+
+class TestTriangleFunctions(unittest.TestCase):
+
+    def test_positive_area(self):
+        res = area(4, 5)
+        self.assertEqual(res, 10)
+
+    def test_zero_area(self):
+        res = area(0, 5)
+        self.assertEqual(res, 0)
+
+    def test_positive_perimeter(self):
+        res = perimeter(3, 4, 5)
+        self.assertEqual(res, 12)
+
+    def test_zero_perimetr(self):
+        res = perimeter(0, 0, 0)
+        self.assertEqual(res, 0)
+
