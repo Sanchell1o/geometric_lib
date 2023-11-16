@@ -1,0 +1,34 @@
+name: main
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  Run-tests-on-Ubuntu:
+    name: Run tests on Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+        - name: run unittest circle
+          run: python -m unittest testcircle.py
+        - name: run unittest triangle
+          run: python -m unittest testtriangle.py
+        - name: run unittest rectangle
+          run: python -m unittest testrectangle.py
+        - name: run unittest square
+          run: python -m unittest testsquare.py
+
+  Run-tests-on-Windows:
+      name: Run tests on Windows
+      runs-on: windows-latest
+      steps:
+        - name: run unittest circle
+          run: python -m unittest testcircle.py
+        - name: run unittest triangle
+          run: python -m unittest testtriangle.py
+        - name: run unittest rectangle
+          run: python -m unittest testrectangle.py
+        - name: run unittest square
+          run: python -m unittest testsquare.py
