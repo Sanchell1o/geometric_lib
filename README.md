@@ -128,6 +128,16 @@
     perimeter(5, 6, 7)          18
 ### История изменения проекта с хешами комитов (кроме последней записи)
 
+### Коммит 7
+Hash: **b29bd7875db7b6ab4fae50ce652c7346b1e3c1e0** 
+
+Author:Sanchell1o <trollbabich1@mail.ru>
+
+Date: Thu Oct 26 14:28:52 2023 +0300
+  
+    added files for testings
+
+
 ### Коммит 6
 Hash: **0aca9cca28e306dabe1c5cf740a5bfa4e226ebda**
 
@@ -183,3 +193,6 @@ Author: smartiqa <info@smartiqa.ru>
 Date:   Thu Mar 4 14:54:08 2021 +0300
 
     L-03: Circle and square added
+
+# Tests  
+Autotests success: 16/16 (100%)  
