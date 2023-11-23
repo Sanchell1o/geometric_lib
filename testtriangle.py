@@ -18,3 +18,6 @@ class TestTriangleFunctions(unittest.TestCase):
         res = triangle.perimeter(0, 0, 0)
         self.assertEqual(res, 0)
 
+    def test_square_negative(self):
+        res=triangle.area(-10,-10)
+        self.assertEqual(res,"error")

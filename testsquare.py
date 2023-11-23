@@ -16,3 +16,7 @@ class SquareTestCase(unittest.TestCase):
     def test_positive_perimeter(self):
         res = square.perimeter(10)
         self.assertEqual(res, 40)
+
+    def test_square_negative(self):
+        res=square.area(-10)
+        self.assertEqual(res,"error")
