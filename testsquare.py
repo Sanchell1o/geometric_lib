@@ -18,5 +18,5 @@ class SquareTestCase(unittest.TestCase):
         self.assertEqual(res, 40)
 
     def test_square_negative(self):
-        res=square.area(-10)
-        self.assertEqual(res,"error")
+        with self.assertRaises(ValueError):
+            res=square.area(-1)

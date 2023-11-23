@@ -18,5 +18,5 @@ class TestCircle(unittest.TestCase):
         self.assertAlmostEqual(res, 0)
 
     def test_square_negative(self):
-        res = circle.area(-10)
-        self.assertEqual(res, "error")
+        with self.assertRaises(ValueError):
+            res=circle.area(-1)

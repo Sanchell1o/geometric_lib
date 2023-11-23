@@ -19,5 +19,5 @@ class TestTriangleFunctions(unittest.TestCase):
         self.assertEqual(res, 0)
 
     def test_square_negative(self):
-        res=triangle.area(-10,-10)
-        self.assertEqual(res,"error")
+        with self.assertRaises(ValueError):
+            res = triangle.area(-10)
