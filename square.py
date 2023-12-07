@@ -23,3 +23,5 @@ def perimeter(a):
                 4*а(int): периметр квадрата.
         '''
     return 4 * a
+
+
