@@ -195,4 +195,4 @@ Date:   Thu Mar 4 14:54:08 2021 +0300
     L-03: Circle and square added
 
 # Tests  
-Autotests success: 16/20 (80%)  
+Autotests success: 14/20 (70%)  
