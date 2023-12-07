@@ -1,7 +1,7 @@
 name: tests for geometric functions
 
 on:
-  push:
+  [push]:
 
 jobs:
   runtime-process-on-Ubuntu:
