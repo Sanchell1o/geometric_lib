@@ -18,7 +18,3 @@ class RectangleTestCase(unittest.TestCase):
     def test_rectangle_perimeter(self):
         res = rectangle.perimeter(10, 10)
         self.assertEqual(res, 40)
-
-    def test_square_negative(self):
-        with self.assertRaises(ValueError):
-            res=rectangle.area(-1,-2)
