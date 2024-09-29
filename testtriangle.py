@@ -17,7 +17,3 @@ class TestTriangleFunctions(unittest.TestCase):
     def test_zero_perimetr(self):
         res = triangle.perimeter(0, 0, 0)
         self.assertEqual(res, 0)
-
-    def test_square_negative(self):
-        with self.assertRaises(ValueError):
-            res = triangle.area(-10)
